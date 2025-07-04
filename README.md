@@ -7,12 +7,19 @@ Running Flutter in a [Docker container](https://hub.docker.com/repository/docker
 - Docker
 
 ### Run
+Prepare:
 ```bash
-make bash
-make display-on
+git clone https://github.com/HardAndHeavy/flutter-docker
+cd flutter-docker
 ```
 
-Inside the container
+On the host machine:
+```bash
+make display-on
+make bash
+```
+
+Inside the container:
 ```bash
 make init
 make install
