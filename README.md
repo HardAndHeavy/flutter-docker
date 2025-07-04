@@ -11,11 +11,11 @@ Prepare:
 ```bash
 git clone https://github.com/HardAndHeavy/flutter-docker
 cd flutter-docker
+make display-on
 ```
 
 On the host machine:
 ```bash
-make display-on
 make bash
 ```
 
