@@ -1,5 +1,5 @@
 init:
-	flutter create app
+	flutter create .
 
 install:
 	flutter pub get
