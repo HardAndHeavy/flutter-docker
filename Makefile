@@ -16,7 +16,7 @@ bash:
 		-v ./app:/app \
 		-v ./app.mk:/app/Makefile \
 		-w /app \
-		-v ./.pub-cache:/root/.pub-cache \
+		-v ./.root:/root \
 		-v ./.cache:/sdks/flutter/bin/cache \
 		-v /tmp/.X11-unix:/tmp/.X11-unix \
 		-e DISPLAY=$(DISPLAY) \
