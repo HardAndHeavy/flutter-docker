@@ -1,3 +1,5 @@
+UID_GID = "$(shell id -u):$(shell id -g)"
+
 build:
 	docker build -t flutter:$(tag) .
 
@@ -13,10 +15,14 @@ pull:
 bash:
 	docker run -it --rm \
 		--net=host \
+		-e HOME=/.home \
+		-v ./.home:/.home \
+		-v /etc/passwd:/etc/passwd \
+		--user=$(UID_GID) \
+		-e USER=$(USER) \
 		-v ./app:/app \
 		-v ./app.mk:/app/Makefile \
 		-w /app \
-		-v ./.root:/root \
 		-v ./.cache:/sdks/flutter/bin/cache \
 		-v /tmp/.X11-unix:/tmp/.X11-unix \
 		-e DISPLAY=$(DISPLAY) \
