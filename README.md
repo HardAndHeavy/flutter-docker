@@ -1,5 +1,5 @@
 # Flutter in Docker
-Running Flutter in a [Docker container](https://hub.docker.com/repository/docker/hardandheavy/flutter/general).
+Running [Flutter](https://github.com/flutter/flutter) in a [Docker container](https://hub.docker.com/repository/docker/hardandheavy/flutter/general).
 
 ### Requirements
 - Ubuntu
