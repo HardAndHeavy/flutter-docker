@@ -22,7 +22,6 @@ make bash
 Inside the container:
 ```bash
 make init
-make install
 make run
 ```
 

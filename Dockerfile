@@ -8,4 +8,12 @@ RUN apt-get update && \
     clang \
     pkg-config \
     libgtk-3-dev \
-    liblzma-dev
+    liblzma-dev \
+    tmux \
+    inotify-tools
+
+WORKDIR /app
+
+COPY ./dev-web.sh /dev-web.sh
+
+CMD ["/dev-web.sh"]

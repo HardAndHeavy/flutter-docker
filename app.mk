@@ -1,10 +1,11 @@
 init:
 	flutter create .
 
-install:
-	flutter pub get
+dev-web:
+	/dev-web.sh
 
-run:
+dev:
+	flutter pub get
 	flutter run
 
 list-devices:

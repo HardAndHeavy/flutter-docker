@@ -15,7 +15,6 @@ bash:
 		--net=host \
 		-v ./app:/app \
 		-v ./app.mk:/app/Makefile \
-		-w /app \
 		-v ./.root:/root \
 		-v ./.keystore:/.keystore \
 		-v ./.cache:/sdks/flutter/bin/cache \
