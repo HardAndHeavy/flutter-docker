@@ -22,7 +22,7 @@ bash:
 		-e DISPLAY=$(DISPLAY) \
 		--privileged \
 		-v /dev/bus/usb:/dev/bus/usb \
-		hardandheavy/flutter:latest	bash
+		hardandheavy/flutter:latest bash
 
 display-on:
 	xhost +local:
